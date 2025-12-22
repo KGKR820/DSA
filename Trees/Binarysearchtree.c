@@ -12,7 +12,6 @@ node* create(int value){
     temp -> right = NULL;
     return temp;
 }
-
 void insert(node** p, int value) {
     if (*p == NULL) {
         *p = create(value);
@@ -22,6 +21,7 @@ void insert(node** p, int value) {
         insert(&((*p)->right), value);
     }
 }
+
 node* findMin(node* p) {
     while (p->left != NULL) {
         p = p->left;

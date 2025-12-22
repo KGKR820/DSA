@@ -50,17 +50,17 @@ void insert(node **p,int value){
         return;
     }
     int bal = balfac(*p);
-  if(bal > 1 && (*p) -> left -> data  < value){
+  if(bal > 1 && (*p) -> left -> data  > value){
      rightrot(p);
   }
-  if(bal < -1 && (*p) -> right -> data  > value){
+  if(bal < -1 && (*p) -> right -> data  < value){
     leftrot(p);
  }
- if(bal > 1 && (*p) -> left -> data  > value){
+ if(bal > 1 && (*p) -> left -> data  < value){
     leftrot(&((*p) -> left));
     rightrot(p);
  }
- if(bal < -1 && (*p) -> right -> data  < value){
+ if(bal < -1 && (*p) -> right -> data  > value){
     rightrot(&((*p) -> right));
     leftrot(p);
  }
