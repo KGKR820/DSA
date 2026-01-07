@@ -45,7 +45,7 @@ int main(){
     unset(num,2);
     cout << num << "\n";
     num = 5;
-    toggle(num,1);
+    toggle(num,0);
     cout << num << "\n";
     num = 5;
     cout << find(num,1) << "\n";

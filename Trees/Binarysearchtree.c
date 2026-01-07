@@ -63,7 +63,6 @@ void search(node *p,int value){
         else if(p -> data < value){
             search(p-> right,value);
         }
-        
     }
 }
 void print(node *p){
